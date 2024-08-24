@@ -56,3 +56,99 @@ a{
     padding-top: 20px;
 
 }
+.password-length{
+    display: flex;
+}
+.password-length-right{
+    display: flex;
+}
+.password-input-form{
+    margin: 105px 20px 60px 60px;
+}
+.input-form{
+   margin-left: 5px;
+    width: 385px;
+    height: 49px;
+    border: none;
+    border-radius: 25px;
+  background-image: linear-gradient(185deg,rgb(231, 231, 231),rgb(249, 249, 249));
+}
+.internal-form{
+    display: flex;
+
+}
+.somebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: greenyellow;
+    border-radius: 25px;
+   margin-left: 10px;
+  
+}
+.copy-btn{
+    margin: 20px 50px 0px 150px;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(39, 166, 250, 0.904);
+    color: azure;
+    cursor: pointer;
+}
+.password-length-left{
+    margin: 40px 0cqmin 0px 0px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.password-length-count{
+    background-color: red;
+}
+.password-length-left-h5{
+    font-size: 20px;
+    font-weight: 300;
+}
+.password-length-right{
+    margin: 40px 5px 0px 55px;
+}
+.plus-btn{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+}
+.minus-btn{  width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50px;}
+    .ranger{
+        margin: 15px 5px;
+        width: 200px;
+      
+    }
+.characters-count{
+    display: flex;
+    margin: 50px 0px;
+    
+}
+#h2h{font-size: 20px;
+font-weight: 100}
+
+.characters-count-right{
+    display: flex;
+    padding: 2px 100px;
+   margin-top: 2px;
+    
+
+}
+.characters-count-right-cap-letters{
+    margin-right: 20px;
+}
+.characters-count-right-small-letters{
+    margin-right: 20px;
+}
+.characters-count-right-numbers{
+    margin-right: 20px;
+}
