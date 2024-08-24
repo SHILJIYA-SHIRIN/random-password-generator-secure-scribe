@@ -7,6 +7,9 @@
    <link rel="shortcut icon" href="./images/s.png" type="image/x-icon">
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <title>Random Password Generator</title>
 </head>
@@ -24,14 +27,43 @@
         </nav>
     </header>
     <div class="main-container">
-<h6>Random Password Generator</h6>
-<h6>Create strong and secure passwords to keep your account safe online.</h6>
+        <div class="heds">
+        <h2 class="roboto-medium">Random Password Generator</h2>
+<h4 class="roboto-medium-2">Create strong and secure passwords to keep your account safe online.</h4>
+</div>
+        <div class="main-container-img"><img src="./images/main-container-img.png" alt=""></div>
+<div class="main-container-password-block">
+
+
 <div class="password-input-form">
     <input type="text" > <label >something</label> <span>
         <button>COPY</button>
     </span>
+    <div class="password-length">
+        <div class="password-length-left">
+            <h5>Password Length:</h5>
+            <div class="password-length-count"></div>
+        </div>
+        <div class="password-length-right">
+            <div class="password-length-right-button-left"></div>
+            <div class="password-length-right-ranger">
+            </div>
+            <div class="password-length-right-button-right"></div>
+        </div>
+    </div>
+    <div class="characters-count">
+        <div class="characters-count-left">
+            <h5>Characters Used:</h5>
+        </div>
+        <div class="characters-count-right">
+            <div class="characters-count-right-cap-letters"><input type="checkbox" name="" id=""><span>ABC</span></div>
+            <div class="characters-count-right-small-letters"><input type="checkbox" name="" id=""><span>abc</span></div>
+            <div class="characters-count-right-numbers"><input type="checkbox" name="" id=""><span>123</span></div>
+            <div class="characters-count-right-special-chars"><input type="checkbox" name="" id=""><span>&%$#</span></div>
+        </div>
+    </div>
     
-</div>  
+</div>  </div>
 </div>
     <div class="password-features">
 
