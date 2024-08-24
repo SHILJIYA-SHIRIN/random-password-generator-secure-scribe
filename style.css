@@ -2,7 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 55px;
+    margin: 35px 200px 0px 410px;
+  }
+  .roboto-medium-2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    margin: 10px 200px 10px 550px;
+  }
+  
 header{
     background-color: #151724;
 width: 100vw;
@@ -19,10 +35,15 @@ a{
     font-weight: bold;
     color: aliceblue;
     text-decoration: none;
+
 }
 
 
 
 .header-logo{
     width: 15vh;
+}
+.heds{
+    display: flex;
+    flex-direction: column;
 }
