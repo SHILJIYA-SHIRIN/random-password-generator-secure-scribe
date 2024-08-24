@@ -118,11 +118,14 @@ a{
     height: 45px;
     border: none;
     border-radius: 50px;
+    cursor: pointer;
 }
 .minus-btn{  width: 45px;
     height: 45px;
     border: none;
-    border-radius: 50px;}
+    border-radius: 50px;
+cursor: pointer;
+}
     .ranger{
         margin: 15px 5px;
         width: 200px;
