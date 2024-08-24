@@ -47,3 +47,12 @@ a{
     display: flex;
     flex-direction: column;
 }
+.image-and-password{
+    display: flex;
+
+}
+.main-container-img{
+    padding-left: 250px;
+    padding-top: 20px;
+
+}
