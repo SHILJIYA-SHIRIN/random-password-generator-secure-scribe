@@ -17,9 +17,9 @@
     <header>
         <nav>
             <img class="header-logo" src="./images/s.png" alt="SECURE-SCRIBE">
-            <a href="">
+            <a href="#">
                 <h6>Home</h6>
-            </a><a href="">
+            </a><a href="#aboutUs">
                 <h6>About-Us</h6>
             </a>
             <a href="">
@@ -43,17 +43,17 @@
 
 
 <div class="password-input-form"><div class="internal-form">
-   <div class="input-form1"><input id="passwordHolder"   type="text"  class="input-form" style="padding-left: 20px;"  readonly ></div>  <div class="somebtn">some</div> </div>
+   <div class="input-form1"><input id="passwordHolder"   type="text"  class="input-form" style="padding-left: 20px;"  readonly ></div>  <div class="somebtn" id="intensityIndicator">Normal</div> </div>
         <button class="copy-btn" onclick="copyToClipboard()">COPY</button>
   
     <div class="password-length">
         <div class="password-length-left">
             <h5 class="password-length-left-h5">Password Length:</h5>
-            <div class="password-length-count" id="password-length">0</div>
+            <div class="password-length-count" id="password-length" >8</div>
         </div>
         <div class="password-length-right">
             <div class="password-length-right-button-left"><button class="plus-btn" id="plusbttn" onclick="btnIncreasedValue()">+</button></div>
-            <div class="password-length-right-ranger"><input type="range" name="" id="passwordInput" min="0" max="50"  value="0" class="ranger" onchange="rangeSlider(this.value)">
+            <div class="password-length-right-ranger"><input type="range" name="" id="passwordInput" min="0" max="50"  value="8" class="ranger" onchange="rangeSlider(this.value)">
             </div>
             <div class="password-length-right-button-right">
                 <button class="minus-btn" onclick="btnDecreasedValue()">-</button>
@@ -65,16 +65,39 @@
             <h2 id="h2h">Characters Used:</h2>
         </div>
         <div class="characters-count-right" >
-            <div class="characters-count-right-cap-letters"><input type="checkbox" name="" id=""><span>ABC</span></div>
-            <div class="characters-count-right-small-letters"><input type="checkbox" name="" id=""><span>abc</span></div>
-            <div class="characters-count-right-numbers"><input type="checkbox" name="" id=""><span>123</span></div>
-            <div class="characters-count-right-special-chars"><input type="checkbox" name="" id=""><span>&%$#</span></div>
+            <div class="characters-count-right-cap-letters"><input type="checkbox" name="" id="includeCapsLetters" onclick="genByCheckBox()"><span>ABC</span></div>
+            <div class="characters-count-right-small-letters"><input type="checkbox" name="" id="includeSmallLetters"onclick="genByCheckBox()"><span>abc</span></div>
+            <div class="characters-count-right-numbers"><input type="checkbox" name="" id="includeNumbers"onclick="genByCheckBox()"><span>123</span></div>
+            <div class="characters-count-right-special-chars"><input type="checkbox" name="" id="includeSymbols" onclick="genByCheckBox()"><span>&%$#</span></div>
         </div>
     </div>
 
 </div>  </div></div>
 </div>
-    <div class="password-features">
+<div class="aboutUs" id="aboutUs">
+    <div class="h1ofaboutus">
+<h1>We protect digital freedom for everyone</h1>
+<pre><h3>      We believe that wherever you live, whatever you love, wherever you’re going, and whatever you do,
+                                             you have the right to live freely and safely online.</h3></pre>
+    </div>
+    <div >
+<img class="imgofaboutus" src="./images/aboutUsimage.webp" alt="" srcset="">
+    </div>
+</div>
+    <div class="why-us">
+        <div class="why-us-headings">
+<h1>How we keep you safe</h1>
+<pre><h3>Today's connected world requires us to share more personal information online than ever before.
+               But that doesn't mean you have to compromise your safety, privacy, or identity.</h3></pre>
+        </div>
+        <div class="why-us-first-section">
+<div class="sec"></div>
+<div class="sec"></div>
+        </div>
+        <div class="why-us-second-section">
+            <div class="sec"></div>
+            <div class="sec"></div>
+        </div>
 
     </div>
     <div class="password-faqs">
