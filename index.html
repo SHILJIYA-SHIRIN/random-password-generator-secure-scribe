@@ -43,20 +43,20 @@
 
 
 <div class="password-input-form"><div class="internal-form">
-   <div class="input-form1"><input type="text"  id="password-holder" class="input-form" style="padding-left: 20px;" disabled ></div>  <div class="somebtn">some</div> </div>
-        <button class="copy-btn">COPY</button>
+   <div class="input-form1"><input id="passwordHolder"   type="text"  class="input-form" style="padding-left: 20px;"  readonly ></div>  <div class="somebtn">some</div> </div>
+        <button class="copy-btn" onclick="copyToClipboard()">COPY</button>
   
     <div class="password-length">
         <div class="password-length-left">
             <h5 class="password-length-left-h5">Password Length:</h5>
-            <div class="password-length-count">st</div>
+            <div class="password-length-count" id="password-length">0</div>
         </div>
         <div class="password-length-right">
-            <div class="password-length-right-button-left"><button class="plus-btn">+</button></div>
-            <div class="password-length-right-ranger"><input type="range" name="" id="" min="1" max="50"  value="12" class="ranger" >
+            <div class="password-length-right-button-left"><button class="plus-btn" id="plusbttn" onclick="btnIncreasedValue()">+</button></div>
+            <div class="password-length-right-ranger"><input type="range" name="" id="passwordInput" min="0" max="50"  value="0" class="ranger" onchange="rangeSlider(this.value)">
             </div>
             <div class="password-length-right-button-right">
-                <button class="minus-btn">-</button>
+                <button class="minus-btn" onclick="btnDecreasedValue()">-</button>
             </div>
         </div>
     </div>
@@ -83,5 +83,8 @@
     <footer class="footer">
 
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
