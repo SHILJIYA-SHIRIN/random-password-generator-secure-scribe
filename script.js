@@ -27,6 +27,7 @@ lengthInput.addEventListener("input", () => {
 
 window.onload=function (){
     generateRandomPassword();
+    faqProperties();
 }
 
 function generateRandomPassword(){
@@ -185,4 +186,15 @@ function copyToClipboard() {
     }).catch(function(error) {
         console.error("Could not copy text: ", error);
     });
+}
+
+function faqProperties()
+{
+const faqPage=document.getElementById("faqBtn");
+faqPage.addEventListener("click",()=>{
+window.location.href="./index2.html"
+}
+
+
+)
 }

@@ -338,3 +338,61 @@ font-weight: 100}
     font-size: 20px;
    text-align: center;
    margin-top: 10px;}
+   .password-faqs{
+    background-color: rgb(255, 255, 255);
+    margin: 35px 75px;
+    border-radius: 50px;
+display: flex;
+   }
+   .faqPageLeft h1{
+    margin-top: 15%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 55px;
+   text-align: center;
+   }
+   .faqPageRight img{
+    width: 30vw;
+    height: 65vh;
+   }
+   .faqPageLeft h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+   text-align: center;
+   margin-top: 10px;
+   }
+   .faqBtn{
+    margin-left: 40%;
+    margin-top: 6%;
+    background-color: rgb(104, 173, 207);
+    border-radius: 50px;
+    width: 150px;
+    height: 70px;
+    cursor: pointer;
+    color: rgb(27, 26, 26);
+    border: none;
+    font-size: larger;
+    font-weight: 700;
+   }
+   .faqBtn:hover{
+    background-color: rgb(122, 164, 198);
+    color: #37383c;
+
+   }
+   .footer{
+    width: 100vw;
+    height:150px;
+    background-color: #151724;
+    margin-top: 30px;
+   }
+   .social-media-icons i{
+   margin: 50px 135px;
+   
+   }
+   .social-media-icons i:hover{
+    cursor: pointer;
+    
+   }
