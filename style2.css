@@ -1,36 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+
 }
+
 .roboto-medium {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 55px;
     margin: 35px 200px 0px 410px;
-  }
-  .roboto-medium-2 {
+}
+
+.roboto-medium-2 {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 15px;
     margin: 10px 200px 10px 550px;
-  }
-  
-header{
+}
+
+header {
     background-color: #151724;
-width: 100vw;
-height: 15vh;
+    width: 100vw;
+    height: 15vh;
 
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around
 }
-a{
+
+a {
     padding-top: 40px;
     font-size: 30px;
     font-weight: bold;
@@ -41,25 +45,29 @@ a{
 
 
 
-.header-logo{
+.header-logo {
     width: 5vh;
 }
-.faq-page{
+
+.faq-page {
     background-color: azure;
 
 }
-.faq-heading{
+
+.faq-heading {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 20px;
     margin: 20px 00px 0px 450px;
 }
-.faq-contents{
+
+.faq-contents {
     display: flex;
     flex-direction: column;
 
 }
+
 .collapsible {
     background-color: azure;
     color: rgb(54, 49, 49);
@@ -68,44 +76,50 @@ a{
     /* margin-left: 35%; */
     margin-top: 2%;
     border: none;
-    text-align:center;
+    text-align: center;
     outline: none;
     font-size: 15px;
-  }
-  
-  .active, .collapsible:hover {
+}
+
+.active,
+.collapsible:hover {
     background-color: rgb(227, 239, 239);
-  }
-  
-  .content {
+}
+
+.content {
     padding: 20px 30px 20px 2px;
     display: none;
     overflow: hidden;
-    background-color:azure;
+    background-color: azure;
     margin-left: 10%;
-  }
-  .footer{
+}
+
+.footer {
     width: 100vw;
-    height:150px;
+    height: 150px;
     background-color: #151724;
     margin-top: 30px;
-   }
-   .social-media-icons i {
-   margin: 50px 50px 50px 200px;
-   width: 10px;
-   height: 10px;
-   }
-   .social-media-icons i:hover{
-    cursor: pointer;
-    
-   }
-   .contact-section hr{
-  margin-top: 20px;
+}
 
-   }
-   .copyright-section{
+.social-media-icons i {
+    margin: 50px 50px 50px 200px;
+    width: 10px;
+    height: 10px;
+}
+
+.social-media-icons i:hover {
+    cursor: pointer;
+
+}
+
+.contact-section hr {
+    margin-top: 20px;
+
+}
+
+.copyright-section {
     width: 100vw;
-    height:40px;
+    height: 40px;
     background-color: #151724;
     color: azure;
     text-align: center;
@@ -115,6 +129,6 @@ a{
     font-weight: 500;
     font-style: normal;
     font-size: 15px;
-   
-    
-   }
+
+
+}

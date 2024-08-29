@@ -1,18 +1,22 @@
 <!-- <i class="fa-regular fa-copy"></i> -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="./images/s.png" type="image/x-icon">
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="./images/s.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Random Password Generator</title>
 </head>
+
 <body>
     <header id="mainPage">
         <nav>
@@ -34,88 +38,101 @@
     </header>
     <div class="main-container">
         <div class="heds">
-        <h2 class="roboto-medium">Random Password Generator</h2>
-<h4 class="roboto-medium-2">Create strong and secure passwords to keep your account safe online.</h4>
-</div>
-<div class="image-and-password">
-        <div class="main-container-img"><img src="./images/main-container-img.png" alt=""></div>
-<div class="main-container-password-block">
-
-
-<div class="password-input-form"><div class="internal-form">
-   <div class="input-form1"><input id="passwordHolder"   type="text"  class="input-form" style="padding-left: 20px;"  readonly ></div>  <div class="somebtn" id="intensityIndicator">Normal</div> </div>
-        <button class="copy-btn" onclick="copyToClipboard()">COPY</button>
-  
-    <div class="password-length">
-        <div class="password-length-left">
-            <h5 class="password-length-left-h5">Password Length:</h5>
-            <div class="password-length-count" id="password-length" >8</div>
+            <h2 class="roboto-medium">Random Password Generator</h2>
+            <h4 class="roboto-medium-2">Create strong and secure passwords to keep your account safe online.</h4>
         </div>
-        <div class="password-length-right">
-            <div class="password-length-right-button-left"><button class="plus-btn" id="plusbttn" onclick="btnIncreasedValue()">+</button></div>
-            <div class="password-length-right-ranger"><input type="range" name="" id="passwordInput" min="0" max="50"  value="8" class="ranger" onchange="rangeSlider(this.value)">
-            </div>
-            <div class="password-length-right-button-right">
-                <button class="minus-btn" onclick="btnDecreasedValue()">-</button>
+        <div class="image-and-password">
+            <div class="main-container-img"><img src="./images/main-container-img.png" alt=""></div>
+            <div class="main-container-password-block">
+
+
+                <div class="password-input-form">
+                    <div class="internal-form">
+                        <div class="input-form1"><input id="passwordHolder" type="text" class="input-form"
+                                style="padding-left: 20px;" readonly></div>
+                        <div class="somebtn" id="intensityIndicator">Normal</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyToClipboard()">COPY</button>
+
+                    <div class="password-length">
+                        <div class="password-length-left">
+                            <h5 class="password-length-left-h5">Password Length:</h5>
+                            <div class="password-length-count" id="password-length">8</div>
+                        </div>
+                        <div class="password-length-right">
+                            <div class="password-length-right-button-left"><button class="plus-btn" id="plusbttn"
+                                    onclick="btnIncreasedValue()">+</button></div>
+                            <div class="password-length-right-ranger"><input type="range" name="" id="passwordInput"
+                                    min="0" max="50" value="8" class="ranger" onchange="rangeSlider(this.value)">
+                            </div>
+                            <div class="password-length-right-button-right">
+                                <button class="minus-btn" onclick="btnDecreasedValue()">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="characters-count">
+                        <div class="characters-count-left">
+                            <h2 id="h2h">Characters Used:</h2>
+                        </div>
+                        <div class="characters-count-right">
+                            <div class="characters-count-right-cap-letters"><input type="checkbox" name=""
+                                    id="includeCapsLetters" onclick="genByCheckBox()"><span>ABC</span></div>
+                            <div class="characters-count-right-small-letters"><input type="checkbox" name=""
+                                    id="includeSmallLetters" onclick="genByCheckBox()"><span>abc</span></div>
+                            <div class="characters-count-right-numbers"><input type="checkbox" name=""
+                                    id="includeNumbers" onclick="genByCheckBox()"><span>123</span></div>
+                            <div class="characters-count-right-special-chars"><input type="checkbox" name=""
+                                    id="includeSymbols" onclick="genByCheckBox()"><span>&%$#</span></div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="characters-count">
-        <div class="characters-count-left">
-            <h2 id="h2h">Characters Used:</h2>
-        </div>
-        <div class="characters-count-right" >
-            <div class="characters-count-right-cap-letters"><input type="checkbox" name="" id="includeCapsLetters" onclick="genByCheckBox()"><span>ABC</span></div>
-            <div class="characters-count-right-small-letters"><input type="checkbox" name="" id="includeSmallLetters"onclick="genByCheckBox()"><span>abc</span></div>
-            <div class="characters-count-right-numbers"><input type="checkbox" name="" id="includeNumbers"onclick="genByCheckBox()"><span>123</span></div>
-            <div class="characters-count-right-special-chars"><input type="checkbox" name="" id="includeSymbols" onclick="genByCheckBox()"><span>&%$#</span></div>
-        </div>
-    </div>
-
-</div>  </div></div>
-</div>
-<div class="aboutUs" id="aboutUs">
-    <div class="h1ofaboutus">
-<h1>We protect digital freedom for everyone</h1>
-<pre><h3>      We believe that wherever you live, whatever you love, wherever you’re going, and whatever you do,
+    <div class="aboutUs" id="aboutUs">
+        <div class="h1ofaboutus">
+            <h1>We protect digital freedom for everyone</h1>
+            <pre><h3>      We believe that wherever you live, whatever you love, wherever you’re going, and whatever you do,
                                              you have the right to live freely and safely online.</h3></pre>
+        </div>
+        <div>
+            <img class="imgofaboutus" src="./images/aboutUsimage.webp" alt="" srcset="">
+        </div>
     </div>
-    <div >
-<img class="imgofaboutus" src="./images/aboutUsimage.webp" alt="" srcset="">
-    </div>
-</div>
     <div class="why-us" id="whyUs">
         <div class="why-us-headings">
-<h1>How we keep you safe</h1>
-<pre><h3>Today's connected world requires us to share more personal information online than ever before.
+            <h1>How we keep you safe</h1>
+            <pre><h3>Today's connected world requires us to share more personal information online than ever before.
                But that doesn't mean you have to compromise your safety, privacy, or identity.</h3></pre>
         </div>
         <div class="why-us-first-section">
-<div class="sec1">
-    <img src="./images/s1.png" alt="">
-    <h1>Free anti-virus , no string attached</h1>
-    <pre><h3>Everyone has the right to live freely and safely online.
+            <div class="sec1">
+                <img src="./images/s1.png" alt="">
+                <h1>Free anti-virus , no string attached</h1>
+                <pre><h3>Everyone has the right to live freely and safely online.
         Thats why we made this possible
     </h3></pre>
-</div>
-<div class="sec2">
-    <img src="./images/s2.png" alt="">
-    <h1>A smoother faster online experience</h1>
-    <pre><h3>Work play and explore online without your devices 
+            </div>
+            <div class="sec2">
+                <img src="./images/s2.png" alt="">
+                <h1>A smoother faster online experience</h1>
+                <pre><h3>Work play and explore online without your devices 
         slowing you down thanks to us
     </h3></pre>
-</div>
+            </div>
         </div>
         <div class="why-us-second-section">
             <div class="sec3"><img src="./images/s3.png" alt="">
                 <h1>A browser built for privacy</h1>
- <pre><h3>our private browser has advanced security built-in,so 
+                <pre><h3>our private browser has advanced security built-in,so 
 you can browse, shop and bank safely on any website
-                </h3></pre></div>
+                </h3></pre>
+            </div>
             <div class="sec4">
                 <img src="./images/s4.png" alt="">
                 <h1>Protecting business dreams.</h1>
-<pre><h3>whether your business employees one or 300 
+                <pre><h3>whether your business employees one or 300 
 persons we want  to keep it safe-today and tomorrow
                 </h3></pre>
             </div>
@@ -123,30 +140,39 @@ persons we want  to keep it safe-today and tomorrow
 
     </div>
     <div class="password-faqs" id="faqPage">
-<div class="faqPageLeft">
-    <h1>FAQs</h1>
-    <h3>Have questions?here you will find the answers most valued by our partners, along with step-by-step instructions and support</h3>
+        <div class="faqPageLeft">
+            <h1>FAQs</h1>
+            <h3>Have questions?here you will find the answers most valued by our partners, along with step-by-step
+                instructions and support</h3>
 
-    <div class="faqQuestions">
-        <button class="faqBtn" id="faqBtn">CLICK HERE !</button>
-    </div>
-</div>
-<div class="faqPageRight">
-    <img src="./images/faqpageimg.avif" alt="">
-</div>
+            <div class="faqQuestions">
+                <button class="faqBtn" id="faqBtn">CLICK HERE !</button>
+            </div>
+        </div>
+        <div class="faqPageRight">
+            <img src="./images/faqpageimg.avif" alt="">
+        </div>
     </div>
     <footer class="footer" id="contact">
         <div class="contact-section">
             <div class="social-media-icons">
                 <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                <a href="https://www.instagram.com/accounts/login/?next=%2Flivein.now%2Ftagged%2F&source=profile_tagged_tab"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                <a href="https://x.com/i/flow/login"><i class="fa-brands fa-twitter"style="color: #ffffff;"></i></a>
-                <a href="https://www.google.com/intl/en-GB/account/about/"><i class="fa-brands fa-google"style="color: #ffffff;"></i></a>
-                <a href="https://www.google.com/search?q=youtube+sign+in&sca_esv=477a866ca3b53f30&sca_upv=1&rlz=1C1GCEA_enIN1031IN1031&sxsrf=ADLYWIJ487qgJBJANhFqZJDX5-Epq9cOEg%3A1724901418826&ei=KujPZuGXMu2O4-EPgM3xoQo&oq=youtube+s&gs_lp=Egxnd3Mtd2l6LXNlcnAiCXlvdXR1YmUgcyoCCAAyERAAGIAEGJECGLEDGIMBGIoFMgsQABiABBiRAhiKBTIREAAYgAQYkQIYsQMYgwEYigUyEBAAGIAEGLEDGIMBGBQYhwIyCBAAGIAEGLEDMhEQABiABBiRAhixAxiDARiKBTILEAAYgAQYkQIYigUyCxAAGIAEGLEDGIMBMgQQABgDMgsQABiABBixAxiDAUjTHVCOBlioEXABeAGQAQCYAWSgAcYBqgEDMS4xuAEByAEA-AEBmAIDoALdAcICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgINEC4YgAQYsAMYQxiKBcICDhAAGIAEGJECGLEDGIoFmAMAiAYBkAYKkgcDMS4yoAezCw&sclient=gws-wiz-serp"><i class="fa-brands fa-youtube"style="color: #ffffff;"></i></a>
+                <a
+                    href="https://www.instagram.com/accounts/login/?next=%2Flivein.now%2Ftagged%2F&source=profile_tagged_tab"><i
+                        class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                <a href="https://x.com/i/flow/login"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                <a href="https://www.google.com/intl/en-GB/account/about/"><i class="fa-brands fa-google"
+                        style="color: #ffffff;"></i></a>
+                <a
+                    href="https://www.google.com/search?q=youtube+sign+in&sca_esv=477a866ca3b53f30&sca_upv=1&rlz=1C1GCEA_enIN1031IN1031&sxsrf=ADLYWIJ487qgJBJANhFqZJDX5-Epq9cOEg%3A1724901418826&ei=KujPZuGXMu2O4-EPgM3xoQo&oq=youtube+s&gs_lp=Egxnd3Mtd2l6LXNlcnAiCXlvdXR1YmUgcyoCCAAyERAAGIAEGJECGLEDGIMBGIoFMgsQABiABBiRAhiKBTIREAAYgAQYkQIYsQMYgwEYigUyEBAAGIAEGLEDGIMBGBQYhwIyCBAAGIAEGLEDMhEQABiABBiRAhixAxiDARiKBTILEAAYgAQYkQIYigUyCxAAGIAEGLEDGIMBMgQQABgDMgsQABiABBixAxiDAUjTHVCOBlioEXABeAGQAQCYAWSgAcYBqgEDMS4xuAEByAEA-AEBmAIDoALdAcICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgINEC4YgAQYsAMYQxiKBcICDhAAGIAEGJECGLEDGIoFmAMAiAYBkAYKkgcDMS4yoAezCw&sclient=gws-wiz-serp"><i
+                        class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
             </div>
-            
+
             <hr>
-            <div class="copyright-section"><h4>Copyright&nbsp;<i class="fa-regular fa-copyright" style="color: #ffffff;"></i>&nbsp;2024 : designed by SHILJIYA SHIRIN </h4></div>
+            <div class="copyright-section">
+                <h4>Copyright&nbsp;<i class="fa-regular fa-copyright" style="color: #ffffff;"></i>&nbsp;2024 : designed
+                    by SHILJIYA SHIRIN </h4>
+            </div>
         </div>
 
     </footer>
@@ -154,4 +180,5 @@ persons we want  to keep it safe-today and tomorrow
 
     <script src="script.js"></script>
 </body>
+
 </html>

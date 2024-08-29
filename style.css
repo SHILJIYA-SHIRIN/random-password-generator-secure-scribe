@@ -1,36 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+
 }
+
 .roboto-medium {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 55px;
     margin: 35px 200px 0px 410px;
-  }
-  .roboto-medium-2 {
+}
+
+.roboto-medium-2 {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 15px;
     margin: 10px 200px 10px 550px;
-  }
-  
-header{
+}
+
+header {
     background-color: #151724;
-width: 100vw;
-height: 15vh;
+    width: 100vw;
+    height: 15vh;
 
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around
 }
-a{
+
+a {
     padding-top: 40px;
     font-size: 30px;
     font-weight: bold;
@@ -41,54 +45,64 @@ a{
 
 
 
-.header-logo{
+.header-logo {
     width: 15vh;
 }
-.heds{
+
+.heds {
     display: flex;
     flex-direction: column;
 }
-.image-and-password{
+
+.image-and-password {
     display: flex;
 
 }
-.main-container-img{
+
+.main-container-img {
     padding-left: 250px;
     padding-top: 20px;
 
 }
-.password-length{
+
+.password-length {
     display: flex;
 }
-.password-length-right{
+
+.password-length-right {
     display: flex;
 }
-.password-input-form{
+
+.password-input-form {
     margin: 105px 20px 60px 60px;
 }
-.input-form{
-   margin-left: 5px;
+
+.input-form {
+    margin-left: 5px;
     width: 385px;
     height: 49px;
     border: none;
     border-radius: 25px;
-  background-image: linear-gradient(185deg,rgb(231, 231, 231),rgb(249, 249, 249));
+    background-image: linear-gradient(185deg, rgb(231, 231, 231), rgb(249, 249, 249));
 }
-.internal-form{
+
+.internal-form {
     display: flex;
 
 }
-.somebtn{
+
+.somebtn {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
     background-color: greenyellow;
     border-radius: 25px;
-   margin-left: 10px;
-  
+    margin-left: 10px;
+
 }
-.copy-btn{
+
+.copy-btn {
     margin: 20px 50px 0px 150px;
     width: 100px;
     height: 50px;
@@ -98,92 +112,110 @@ a{
     color: azure;
     cursor: pointer;
 }
-.password-length-left{
+
+.password-length-left {
     margin: 40px 0cqmin 0px 0px;
     font-size: 20px;
     font-weight: 300;
     text-align: center;
 }
 
-.password-length-left-h5{
+.password-length-left-h5 {
     font-size: 20px;
     font-weight: 300;
 }
-.password-length-right{
+
+.password-length-right {
     margin: 40px 5px 0px 55px;
 }
-.plus-btn{
+
+.plus-btn {
     width: 45px;
     height: 45px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
 }
-.minus-btn{  width: 45px;
+
+.minus-btn {
+    width: 45px;
     height: 45px;
     border: none;
     border-radius: 50px;
-cursor: pointer;
+    cursor: pointer;
 }
-    .ranger{
-        margin: 15px 5px;
-        width: 200px;
-      
-    }
-.characters-count{
+
+.ranger {
+    margin: 15px 5px;
+    width: 200px;
+
+}
+
+.characters-count {
     display: flex;
     margin: 50px 0px;
-    
-}
-#h2h{font-size: 20px;
-font-weight: 100}
 
-.characters-count-right{
+}
+
+#h2h {
+    font-size: 20px;
+    font-weight: 100
+}
+
+.characters-count-right {
     display: flex;
     padding: 2px 100px;
-   margin-top: 2px;
-    
+    margin-top: 2px;
+
 
 }
-.characters-count-right-cap-letters{
+
+.characters-count-right-cap-letters {
     margin-right: 20px;
 }
-.characters-count-right-small-letters{
+
+.characters-count-right-small-letters {
     margin-right: 20px;
 }
-.characters-count-right-numbers{
+
+.characters-count-right-numbers {
     margin-right: 20px;
 }
-.aboutUs{
-    margin: 25px ;
+
+.aboutUs {
+    margin: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.h1ofaboutus h1{
+
+.h1ofaboutus h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 55px;
     padding-left: 75px;
 }
-.h1ofaboutus h3{
+
+.h1ofaboutus h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 25px;
-   margin-top: 20px;
-   margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
-.aboutUs .imgofaboutus{
+
+.aboutUs .imgofaboutus {
     margin-top: 20px;
     margin-left: 35px;
     width: 70vw;
     height: 70vh;
     border-radius: 55px;
 }
-.why-us{
+
+.why-us {
     background-color: antiquewhite;
     margin: 35px 75px;
     display: flex;
@@ -192,7 +224,8 @@ font-weight: 100}
     align-items: center;
     border-radius: 50px;
 }
-.why-us-headings h1{
+
+.why-us-headings h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -200,26 +233,30 @@ font-weight: 100}
     padding-left: 230px;
     margin-top: 50px;
 }
-.why-us-headings h3{
+
+.why-us-headings h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 25px;
-   margin-top: 20px;
-   margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
-.why-us-first-section{
+
+.why-us-first-section {
     display: flex;
     margin: 20px 2px;
     justify-content: space-between;
-    
+
 }
-.why-us-second-section{
+
+.why-us-second-section {
     display: flex;
     margin: 30px 10px;
     justify-content: space-between;
 }
-.sec1{
+
+.sec1 {
     margin-right: 10px;
     background-color: white;
     display: flex;
@@ -228,26 +265,31 @@ font-weight: 100}
     border-radius: 50px;
     width: 30vw;
 }
-.sec1 img{
+
+.sec1 img {
     width: 50%;
     height: 50%;
     margin-left: 120px;
 }
-.sec1 h1{
+
+.sec1 h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 25px;
-   text-align: center;
+    text-align: center;
 }
-.sec1 h3{
+
+.sec1 h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 20px;
-   text-align: center;
-   margin-top: 10px;}
-.sec2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sec2 {
     margin-left: 25px;
     background-color: white;
     display: flex;
@@ -256,29 +298,33 @@ font-weight: 100}
     border-radius: 50px;
     width: 30vw;
 }
-.sec2 img{
+
+.sec2 img {
     width: 50%;
     height: 50%;
     margin-left: 120px;
 }
-.sec2 h1{
+
+.sec2 h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 25px;
-   text-align: center;
+    text-align: center;
 }
-.sec2 h3{
+
+.sec2 h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 20px;
-   text-align: center;
-   margin-top: 10px;}
+    text-align: center;
+    margin-top: 10px;
+}
 
 
-   .sec3{
-   
+.sec3 {
+
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -286,31 +332,35 @@ font-weight: 100}
     border-radius: 50px;
     width: 30vw;
 }
-.sec3 img{
+
+.sec3 img {
     width: 50%;
     height: 50%;
     margin-left: 120px;
 }
-.sec3 h1{
+
+.sec3 h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 25px;
-   text-align: center;
+    text-align: center;
 }
-.sec3 h3{
+
+.sec3 h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 20px;
-   text-align: center;
-   margin-top: 10px;}
+    text-align: center;
+    margin-top: 10px;
+}
 
 
 
 
 
-   .sec4{
+.sec4 {
     margin-left: 30px;
     background-color: white;
     display: flex;
@@ -319,52 +369,61 @@ font-weight: 100}
     border-radius: 50px;
     width: 30vw;
 }
-.sec4 img{
+
+.sec4 img {
     width: 50%;
     height: 50%;
     margin-left: 120px;
 }
-.sec4 h1{
+
+.sec4 h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 25px;
-   text-align: center;
+    text-align: center;
 }
-.sec4 h3{
+
+.sec4 h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 20px;
-   text-align: center;
-   margin-top: 10px;}
-   .password-faqs{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.password-faqs {
     background-color: rgb(255, 255, 255);
     margin: 35px 75px;
     border-radius: 50px;
-display: flex;
-   }
-   .faqPageLeft h1{
+    display: flex;
+}
+
+.faqPageLeft h1 {
     margin-top: 15%;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 55px;
-   text-align: center;
-   }
-   .faqPageRight img{
+    text-align: center;
+}
+
+.faqPageRight img {
     width: 30vw;
     height: 65vh;
-   }
-   .faqPageLeft h3{
+}
+
+.faqPageLeft h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 30px;
-   text-align: center;
-   margin-top: 10px;
-   }
-   .faqBtn{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.faqBtn {
     margin-left: 40%;
     margin-top: 6%;
     background-color: rgb(104, 173, 207);
@@ -376,34 +435,40 @@ display: flex;
     border: none;
     font-size: larger;
     font-weight: 700;
-   }
-   .faqBtn:hover{
+}
+
+.faqBtn:hover {
     background-color: rgb(122, 164, 198);
     color: #37383c;
 
-   }
-   .footer{
+}
+
+.footer {
     width: 100vw;
-    height:150px;
+    height: 150px;
     background-color: #151724;
     margin-top: 30px;
-   }
-   .social-media-icons i {
-   margin: 50px 50px 50px 200px;
-   width: 10px;
-   height: 10px;
-   }
-   .social-media-icons i:hover{
-    cursor: pointer;
-    
-   }
-   .contact-section hr{
-  margin-top: 20px;
+}
 
-   }
-   .copyright-section{
+.social-media-icons i {
+    margin: 50px 50px 50px 200px;
+    width: 10px;
+    height: 10px;
+}
+
+.social-media-icons i:hover {
+    cursor: pointer;
+
+}
+
+.contact-section hr {
+    margin-top: 20px;
+
+}
+
+.copyright-section {
     width: 100vw;
-    height:40px;
+    height: 40px;
     background-color: #151724;
     color: azure;
     text-align: center;
@@ -413,6 +478,6 @@ display: flex;
     font-weight: 500;
     font-style: normal;
     font-size: 15px;
-   
-    
-   }
+
+
+}
