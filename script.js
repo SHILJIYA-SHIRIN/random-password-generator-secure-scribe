@@ -190,3 +190,6 @@ function faqProperties() {
     window.location.href = "./index2.html";
   });
 }
+function menuDropDown(){
+    document.getElementById("dropDown").classList.toggle("show");
+}
